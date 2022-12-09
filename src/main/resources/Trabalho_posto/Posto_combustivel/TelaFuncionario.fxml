@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="723.0" prefWidth="927.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Trabalho_posto.Posto_combustivel.TelaFuncionarioController">
+   <children>
+      <SubScene height="277.0" layoutX="39.0" layoutY="102.0" width="726.0">
+         <root>
+            <Region />
+         </root>
+      </SubScene>
+      <TableView fx:id="tableViewFuncionario" layoutX="22.0" layoutY="401.0" prefHeight="269.0" prefWidth="885.0">
+         <columns>
+            <TableColumn fx:id="tableColumnId" prefWidth="26.0" text="ID" />
+            <TableColumn fx:id="tableColumnNome" prefWidth="67.0" text="Nome" />
+            <TableColumn fx:id="tableColumnSobrenome" prefWidth="101.0" text="Sobrenome" />
+            <TableColumn fx:id="tableColumnCpf" prefWidth="85.0" text="CPF" />
+            <TableColumn fx:id="tableColumnPis" prefWidth="85.0" text="Pis" />
+            <TableColumn fx:id="tableColumnDepartamento" prefWidth="110.0" text="Departamento" />
+            <TableColumn fx:id="tableColumnTelefone" minWidth="0.0" prefWidth="99.0" text="Telefone" />
+            <TableColumn fx:id="tableColumnSalario" prefWidth="85.0" text="Salário" />
+            <TableColumn fx:id="tableColumnEndereco" prefWidth="109.0" text="Endereço" />
+            <TableColumn fx:id="tableColumnEmail" prefWidth="124.0" text="Email" />
+         </columns>
+      </TableView>
+      <TextField fx:id="textFieldId" editable="false" layoutX="64.0" layoutY="71.0" prefHeight="25.0" prefWidth="37.0" />
+      <Label layoutX="37.0" layoutY="76.0" text="ID" />
+      <Label layoutX="46.0" layoutY="124.0" text="Nome:" />
+      <TextField id="nome" fx:id="textFieldNome" layoutX="117.0" layoutY="120.0" prefHeight="31.0" prefWidth="135.0" />
+      <Label layoutX="44.0" layoutY="164.0" text="CPF:" />
+      <TextField fx:id="textFieldCpf" layoutX="117.0" layoutY="159.0" prefHeight="25.0" prefWidth="232.0" />
+      <Label layoutX="46.0" layoutY="250.0" text="Endereco:" />
+      <TextField fx:id="textFieldEndereco" layoutX="115.0" layoutY="245.0" prefHeight="31.0" prefWidth="319.0" />
+      <Label layoutX="46.0" layoutY="205.0" text="Telefone:" />
+      <TextField fx:id="textFieldTelefone" layoutX="115.0" layoutY="202.0" prefHeight="31.0" prefWidth="180.0" />
+      <Label layoutX="244.0" layoutY="14.0" prefHeight="31.0" prefWidth="297.0" text="CADASTRO DE FUNCIONÁRIO" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS" underline="true">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonSalvarFuncionario" layoutX="212.0" layoutY="336.0" mnemonicParsing="false" onAction="#handlerSalvarFuncionario" prefHeight="26.0" prefWidth="99.0" text="Salvar" />
+      <Button fx:id="buttonExcluirFuncionario" layoutX="476.0" layoutY="336.0" mnemonicParsing="false" onAction="#handlerExcluirFuncionario" prefHeight="26.0" prefWidth="85.0" text="Excluir" />
+      <Button fx:id="buttonNovoFuncionario" layoutX="345.0" layoutY="336.0" mnemonicParsing="false" onAction="#handlerNovoFuncionario" prefHeight="26.0" prefWidth="93.0" text="Novo" />
+      <Label layoutX="264.0" layoutY="124.0" text="Sobrenome:" />
+      <TextField fx:id="textFieldSobrenome" layoutX="353.0" layoutY="119.0" prefHeight="31.0" prefWidth="352.0" />
+      <TextField fx:id="textFieldEmail" layoutX="115.0" layoutY="289.0" prefHeight="31.0" prefWidth="319.0" />
+      <Label layoutX="46.0" layoutY="294.0" text="Email:" />
+      <Label layoutX="367.0" layoutY="164.0" text="Pis:" />
+      <TextField fx:id="textFieldPis" layoutX="392.0" layoutY="159.0" prefHeight="31.0" prefWidth="232.0" />
+      <Label layoutX="311.0" layoutY="207.0" text="Salário:" />
+      <TextField fx:id="textFieldSalario" layoutX="367.0" layoutY="202.0" />
+      <TextField fx:id="textFieldDepartamento" layoutX="551.0" layoutY="245.0" prefHeight="31.0" prefWidth="199.0" />
+      <Label layoutX="443.0" layoutY="250.0" text="Departamento:" />
+   </children>
+</AnchorPane>
